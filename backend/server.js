@@ -14,7 +14,11 @@ const port = process.env.PORT || 4000
 
 //middle ware
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: 'https://tomato-a-food-delivery-app-admin-1.onrender.com',
+  credentials: true, // If you're using cookies or authentication headers
+}));
+
 
 //db connextion
 connectDB();
