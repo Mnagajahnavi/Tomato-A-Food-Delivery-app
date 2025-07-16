@@ -13,7 +13,7 @@ const razorpay = new Razorpay({
 
 
 const placeOrder = async (req, res) => {
-  const frontend_url = "http://localhost:5174";
+  const frontend_url = "https://tomato-a-food-delivery-app-1.onrender.com";
 
   try {
     const items = req.body.items;
