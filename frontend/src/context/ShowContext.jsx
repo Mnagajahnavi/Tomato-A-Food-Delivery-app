@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const StoreContextProvider = (props) => {
   const [cartItem, setCartItems] = useState({});
-  const url = "http://localhost:4000";
+  const url = "https://tomato-a-food-delivery-app.onrender.com";
   const [token,setToken] = useState("");
   const [food_list,setFoodList] = useState([]);
   const addToCart = async (itemId) => {
