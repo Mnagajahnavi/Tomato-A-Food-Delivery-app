@@ -14,10 +14,7 @@ const port = process.env.PORT || 4000
 
 //middle ware
 app.use(express.json())
-app.use(cors({
-  origin: 'https://tomato-a-food-delivery-app-admin-1.onrender.com',
-  credentials: true, // If you're using cookies or authentication headers
-}));
+app.use(cors());
 
 
 //db connextion
@@ -35,7 +32,7 @@ app.get('/',(request,response)=>{
 })
 
 app.listen(port,()=>{
-    console.log(`Server is running : http://localhost:${port}`)
+    console.log(`Server is running ${port}`)
 })
 
 //mongodb+srv://jahnavi22bec7306:c5HVIF0RJVhovJjP@cluster-1.sk8ttvt.mongodb.net/?
